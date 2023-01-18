@@ -1,0 +1,1758 @@
+{
+	"info": {
+		"_postman_id": "841280c4-a7a1-4eaa-bbd3-49db279d3b8a",
+		"name": "ExamCalendar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NTg5OTMsImlhdCI6MTY3Mzc0MDk5M30.t5c47mJPknroqPuRigKq6-O2iaGQ24oo6SjduoFaLyrxoijehPFVvgGEcw4WqsGL_uHcwxoP3r8PznDjKRMlqw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/user/1",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/user/1",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NTU2NjQsImlhdCI6MTY3MzczNzY2NH0.idoWt-UsuyxMKx6biod7Z1lsdYxjA8kpIzx681-ArW0hBgeHmgENZADljq7uHlZW15ImGaxkuhWuTEeu6ov8iw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"clarence@gmail.com\",\r\n    \"password\":\"password\",\r\n    \"teacher\":false,\r\n    \"admin\":false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/user/1",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM4MDE3MDYsImlhdCI6MTY3Mzc4MzcwNn0.dTPPOKhZbRtk56lMZmLbEyfoH0aT3mIa3JSZf_K7X-QbdZkmOfupiX17VUWJBSXQxWpwetYrEhokWyrCturuBQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/user",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Admins",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM4NDQ4MzMsImlhdCI6MTY3MzgyNjgzM30.alt2z3LHw8jvpb-4uW6XrAqbUlzWIUfOmrtO6hBTt25Mk2tdIUqYNWiN4gy-rjy0YdSGkNNavjgvwpsHr8tPJw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/user/admin",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Teacher",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM4OTY5NjgsImlhdCI6MTY3Mzg3ODk2OH0.kKGaa0CyEFhSqDXPuFRi3UFC4S97uHcscrK4e0rgZBB7o3fLHmZJXi26g21HDNQ4txJmD3jrGAjRokx6yaTFxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/user/teacher",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"teacher"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Students",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM4OTY5NjgsImlhdCI6MTY3Mzg3ODk2OH0.kKGaa0CyEFhSqDXPuFRi3UFC4S97uHcscrK4e0rgZBB7o3fLHmZJXi26g21HDNQ4txJmD3jrGAjRokx6yaTFxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/user/student",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"student"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Class",
+			"item": [
+				{
+					"name": "Get by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/class/1",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"class",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Class",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/class/1",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"class",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Class",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Fisa Info 4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/class/",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"class",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Class",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"GIA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/class/1",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"class",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all classes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/class",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"class"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subject",
+			"item": [
+				{
+					"name": "Get by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM5MDQxMDQsImlhdCI6MTY3Mzg4NjEwNH0.dJLAUfWK0RRfsahkW5bzUxClure7ziHTQctBDG7P7cg5hiKDa8PKn7JeLiVQ_Rqhpowc7TOcAScjogd6fEzCAw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/subject/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"subject",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Subject",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/subject/1",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"subject",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Subject",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM4ODc1MTUsImlhdCI6MTY3Mzg2OTUxNX0.tZ9BlnKYv_mLHVZ_3Segocv68QwwB_tQaKlO5pm65V0t8UlVWp_X4jlGD7wwP_RCROhMzCPr0c4ROkksAF-PQQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"CyberSecurité\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/subject/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"subject",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Subject",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Probabilités\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/subject/1",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"subject",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Subject",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM5MDQxMDQsImlhdCI6MTY3Mzg4NjEwNH0.dJLAUfWK0RRfsahkW5bzUxClure7ziHTQctBDG7P7cg5hiKDa8PKn7JeLiVQ_Rqhpowc7TOcAScjogd6fEzCAw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/subject",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"subject"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "School",
+			"item": [
+				{
+					"name": "Get by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/school/1",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"school",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete School",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/school/1",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"school",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add School",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"CY-Tech\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/school/",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"school",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put School",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"CY Universite\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/school/1",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"school",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all school",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/school",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"school"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Exam",
+			"item": [
+				{
+					"name": "Get by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM4MTgwNDMsImlhdCI6MTY3MzgwMDA0M30.L7mc54jnvg9oZZprLXVzfdE172KPucZumUvVlTHALciumsXHD8O1q1D9M_Q-i7FNvbvyVYy1RDh2b-C_GiuLjQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/exam/1",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"exam",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Exam",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/exam/1",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"exam",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Exam",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM4MTgwNDMsImlhdCI6MTY3MzgwMDA0M30.L7mc54jnvg9oZZprLXVzfdE172KPucZumUvVlTHALciumsXHD8O1q1D9M_Q-i7FNvbvyVYy1RDh2b-C_GiuLjQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Partiel de Noel\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/exam/",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"exam",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Exam",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM4MTgwNDMsImlhdCI6MTY3MzgwMDA0M30.L7mc54jnvg9oZZprLXVzfdE172KPucZumUvVlTHALciumsXHD8O1q1D9M_Q-i7FNvbvyVYy1RDh2b-C_GiuLjQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Partiel fin de Semestre 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/exam/1",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"exam",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all exam",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/exam",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"exam"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Room",
+			"item": [
+				{
+					"name": "Get by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/room/1",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"room",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Room*",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/room/1",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"room",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Room",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"FT202\",\r\n    \"capacity\":40\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/room/",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"room",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Room",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"FT202\",\r\n    \"capacity\":50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/room/1",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"room",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all room",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/room",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"room"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Time Slot",
+			"item": [
+				{
+					"name": "Get by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/room/1",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"room",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Room*",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/room/1",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"room",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Time Slot",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM4OTY5NjgsImlhdCI6MTY3Mzg3ODk2OH0.kKGaa0CyEFhSqDXPuFRi3UFC4S97uHcscrK4e0rgZBB7o3fLHmZJXi26g21HDNQ4txJmD3jrGAjRokx6yaTFxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"start_date\":\"2023-01-15T14:46:38\",\r\n    \"end_date\":\"2023-01-16T14:46:38\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/timeslot/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"timeslot",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Time Slot",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"FT202\",\r\n    \"capacity\":50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/tiemslot/1",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"tiemslot",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all time slot",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM4OTkwMDMsImlhdCI6MTY3Mzg4MTAwM30.L0uC_2badC1TLrAmm09VxCYU4_GtndCT58jhEpAKF9XKlhftLi7UjU5vdz9_tDmB73iGSG2UVW5x2eH43n-M1A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/timeslot",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"timeslot"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Unavailable",
+			"item": [
+				{
+					"name": "Get by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/room/1",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								"room",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Unavailable",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM4MjM4NTYsImlhdCI6MTY3MzgwNTg1Nn0.nXu51zYsVf0KEcpaOLPofz1wSwj_gt1ZLWqQQcDAA85i3nmn9X6PpKIBygaeqNZYxrKLr2tHObOI-1W-89BozQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/unavailable/1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"unavailable",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add unavailable",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM4OTY5NjgsImlhdCI6MTY3Mzg3ODk2OH0.kKGaa0CyEFhSqDXPuFRi3UFC4S97uHcscrK4e0rgZBB7o3fLHmZJXi26g21HDNQ4txJmD3jrGAjRokx6yaTFxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"teacher\":2,\r\n    \"unavailability\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/unavailable/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"unavailable",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put unavailable",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"teacher\":\"1\",\r\n    \"unavailability\":\"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/unavailable/1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"unavailable",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all unavailable",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM4OTY5NjgsImlhdCI6MTY3Mzg3ODk2OH0.kKGaa0CyEFhSqDXPuFRi3UFC4S97uHcscrK4e0rgZBB7o3fLHmZJXi26g21HDNQ4txJmD3jrGAjRokx6yaTFxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/unavailable",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"unavailable"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Session",
+			"item": [
+				{
+					"name": "Get by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/session/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"session",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Session",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM4MjM4NTYsImlhdCI6MTY3MzgwNTg1Nn0.nXu51zYsVf0KEcpaOLPofz1wSwj_gt1ZLWqQQcDAA85i3nmn9X6PpKIBygaeqNZYxrKLr2tHObOI-1W-89BozQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/session/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"session",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Session",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM5MDUwNDYsImlhdCI6MTY3Mzg4NzA0Nn0.ZBpaZ-5Ma4tj_NvftzWeB79RFpH7Q-SCsxi5IXkcfoy4Oqmm030PCiEZbjC74PYj1uM3Q8Zhow9kV82woMTcPQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"teacher\":3,\r\n    \"date\":2,\r\n    \"class\":2,\r\n    \"room\":2,\r\n    \"exam\":2,\r\n    \"subject\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/session/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"session",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put session",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM3NjM5MTgsImlhdCI6MTY3Mzc0NTkxOH0.xCrzvDYj5eKKP9LKEMBI8IWI0cJHBS5LbugPJwPij9_cK_olNbZAi6OkfDF-905ZsBxjk4AS4OfRlTwal2LRrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"teacher\":\"1\",\r\n    \"unavailability\":\"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/session/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"session",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all session",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGFyZW5jZS5jbGF1eEBnbWFpbC5jb20iLCJleHAiOjE2NzM5MDM1MTUsImlhdCI6MTY3Mzg4NTUxNX0.sEgylfYKMPGR4Qgm3YIeyo0E-IpEdDdfCCPgAl-FrkD0a9AN5IisdRazqd6VdsgyZGaK0r53BtmOMjym6mxI8A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/session",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"session"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Security",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"clarence.claux@gmail.com\",\r\n    \"password\":\"password\",\r\n    \"first_name\":\"Clarence\",\r\n    \"last_name\":\"Claux\",\r\n    \"teacher\":true,\r\n    \"admin\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/register",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Authenticate",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"clarence.claux@gmail.com\",\r\n    \"password\":\"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/authenticate",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Home message not logged",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://examschedulerapi-env.eba-4uj6tzx8.eu-west-1.elasticbeanstalk.com/",
+							"protocol": "http",
+							"host": [
+								"examschedulerapi-env",
+								"eba-4uj6tzx8",
+								"eu-west-1",
+								"elasticbeanstalk",
+								"com"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

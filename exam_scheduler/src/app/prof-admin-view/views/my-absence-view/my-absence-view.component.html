@@ -1,0 +1,22 @@
+<div class="visual-box" *ngIf="data.length>0">
+    <h2>Récapitulatif des indisponibilités</h2>
+    <ul>
+        <li *ngFor="let u of data">
+            <table>
+                <thead>
+                    <th>Début</th>
+                    <th>Fin</th>
+                    <th></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{dateFormat(accessTimeslot(u.id)!.start_date)}}</td>
+                        <td>{{dateFormat(accessTimeslot(u.id)!.end_date)}}</td>
+                        <td><button class="suppr-button" (click)="onDelete($event)" value={{u.id}}>Supprimer</button>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </li>
+    </ul>
+</div>

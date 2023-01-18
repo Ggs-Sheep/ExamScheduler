@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    # This part is used with the cloud config server
+#    url: jdbc:mysql://${RDS_HOSTNAME}:${RDS_PORT}/${RDS_DB_NAME}
+#    username: ${RDS_USERNAME}
+#    password: ${RDS_PASSWORD}
+    url: jdbc:mysql://localhost:3306/YOU_DATABASE_NAME
+    username: USERNAME
+    password: PASSWORD
+  jpa:
+    hibernate.ddl-auto: create-drop
+    generate-ddl: true
+    show-sql: true
+jwt:
+  secret: Pn3V7oNkKr14z92o4Hhc
+# Will run by default on port 8080
+#server:
+#  port: 5000

@@ -1,0 +1,37 @@
+{
+  "exam":
+  {
+    "name": "Partiel S1",
+    "start_date": "2023-01-25T15:00:00",
+    "end_date": "2023-01-30T17:00:00"
+  },
+  "excluded_subjects":
+  [
+    2,
+    3
+  ],
+  "excluded_classes":
+  [
+    1,
+    2
+  ],
+  "excluded_timeslots":
+  [
+    {
+      "start_date":"2023-01-21T14:00:00",
+      "end_date":"2023-01-21T15:00:00"
+    },
+    {
+      "start_date":"2023-01-23T08:00:00",
+      "end_date":"2023-01-23T10:00:00"
+    }
+  ],
+  "mixed_subjects":
+  [
+    1
+  ],
+  "excluded_rooms":
+  [
+    1
+  ]
+}
